@@ -31,6 +31,10 @@ export const TodoList: React.FC = () => {
         SetTodo([]);
     }
 
+    const handleDelete = (id: number) => {
+        SetTodo(Todo.filter(todo => todo.id !== id));
+    }
+
     return (
         <div className="main-container">
             <Card style={{ width: "600px" }}>
@@ -41,12 +45,15 @@ export const TodoList: React.FC = () => {
                 <CardContent>
                     <ul>
                         {Todo.map((todo) => (
-                            <li
-                                key={todo.id}
-                                onClick={() => handleToggle(todo.id)}
-                                style={{ textDecoration: todo.processed ? "line-through" : "none", color: "black" }}
-                            >
-                                {todo.text}
+                            <li key={todo.id}>
+                                <span
+                                    key={todo.id}
+                                    onClick={() => handleToggle(todo.id)}
+                                    style={{ textDecoration: todo.processed ? "line-through" : "none", color: "black" }}
+                                >
+                                    {todo.text}
+                                </span>
+                                <a onClick={() => handleDelete(todo.id)} style={{ marginLeft: "10px", color: "red" }}>Delete</a>
                             </li>
                         ))}
                     </ul>
