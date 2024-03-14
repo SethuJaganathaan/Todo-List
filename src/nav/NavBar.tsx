@@ -1,4 +1,4 @@
-import { Button, Container, Menu } from "semantic-ui-react";
+import { Container, Menu } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -7,9 +7,10 @@ export default function NavBar() {
             <Container>
                 <Menu.Item as={NavLink} to='/todolist' name='To-do' />
                 <Menu.Item as={NavLink} to='/counter' name='Counter' />
-                <Menu.Item>
+                <Menu.Item as={NavLink} to='/calculator' name='Calculator' />
+                {/* <Menu.Item>
                     <Button as={NavLink} to='/calculator' positive content='calculator' />
-                </Menu.Item>
+                </Menu.Item> */}
             </Container>
         </Menu>
     )
