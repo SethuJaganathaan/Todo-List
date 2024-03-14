@@ -53,7 +53,7 @@ export const TodoList: React.FC = () => {
                                 >
                                     {todo.text}
                                 </span>
-                                <a onClick={() => handleDelete(todo.id)} style={{ marginLeft: "10px", color: "red" }}>Delete</a>
+                                <a onClick={() => handleDelete(todo.id)} style={{ marginLeft: "10px", color: "red" }}>Remove</a>
                             </li>
                         ))}
                     </ul>
