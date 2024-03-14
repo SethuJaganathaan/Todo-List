@@ -3,6 +3,7 @@ import { TodoList } from "./components/TodoList"
 import { Route, Routes } from 'react-router-dom';
 import Counter from './components/Counter';
 import NavBar from './nav/NavBar';
+import Calculator from './calculator/Calculator';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/todolist' element={<TodoList />}/>
         <Route path='/counter' element={<Counter />}/>
+        <Route path='/calculator' element={<Calculator />}/>
       </Routes>
     </div>
   )

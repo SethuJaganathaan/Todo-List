@@ -29,7 +29,8 @@ input {
   border-radius: 5px;
   padding: 10px;
   border: 1px solid #ccc;
-  margin-top: 20px; /* Adjusted margin */
+  margin-top: 20px;
+  /* Adjusted margin */
 }
 
 li {
@@ -46,10 +47,10 @@ button {
 }
 
 .ui.input {
-	position: relative;
-	font-weight: 400;
-	font-style: normal;
-	display: inline-flex;
-	color: rgba(0,0,0,.87);
-	margin-left: 224px;
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-flex;
+  color: rgba(0, 0, 0, .87);
+  margin-left: 121px;
 }

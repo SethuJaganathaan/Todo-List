@@ -35,7 +35,7 @@ export const TodoList: React.FC = () => {
         <div className="main-container">
             <Card style={{ width: "600px" }}>
                 <CardHeader>
-                    <h3 style={{ textAlign: "center" }}>To-Do List</h3>
+                    <h3 style={{ textAlign: "center", color: "black" }}>To-Do List</h3>
                 </CardHeader>
 
                 <CardContent>
@@ -44,7 +44,7 @@ export const TodoList: React.FC = () => {
                             <li
                                 key={todo.id}
                                 onClick={() => handleToggle(todo.id)}
-                                style={{ textDecoration: todo.processed ? "line-through" : "none" }}
+                                style={{ textDecoration: todo.processed ? "line-through" : "none", color: "black" }}
                             >
                                 {todo.text}
                             </li>
